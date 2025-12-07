@@ -126,7 +126,9 @@ Although my original coursework did not require cloud deployment, I extended the
 This was a valuable learning experience and helped me understand how production data pipelines run in real cloud environments.
 
 ## Typical Job Configuration
+```
 Main class: etl.ClaimsETL
 Parameters:
    /mnt/raw/claims.csv
    /mnt/curated/claims/
+```
