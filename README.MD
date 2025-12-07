@@ -30,44 +30,6 @@ This project simulates a simplified healthcare data pipeline:
 
 Additional distributed computing modules (covariance, matrix multiply, linear regression) are included from my Cloud Computing assignment as examples of parallel numerical analytics on Spark.
 
-# Architecture
-Raw Data (Azure Storage)
-        │
-        ▼
-Claims ETL (Scala + Spark)
-        │
-        ▼
-Curated Claims (Parquet / ADLS)
-        │
-   ┌───────────────┬────────────────┐
-   ▼               ▼                ▼
-Cost KPI Engine   Python EDA     (Optional) ML / Numerical
-(Scala)           (Pandas)       (Covariance, LR, Multiply)
-
-
-# Repository Structure
-AzureSpark-Analytics-Layer/
-│
-├── data/                         # Sample datasets
-├── python/
-│   └── summary.py             # Python exploratory analysis
-│
-├── src/main/scala/
-│   ├── etl/
-│   │   └── ClaimsETL.scala       # Curates healthcare claims data
-│   ├── analytics/
-│   │   └── CostKPIs.scala        # Provider-level KPIs
-│   ├── matrix/                   # From CC assignment
-│   │   ├── Multiply.scala
-│   │   ├── Covariance.scala
-│   │   └── LinearRegression.scala
-│   ├── regression/
-│   │   └── LR.scala              # Closed-form regression (Spark SQL)
-│   └── utils/
-│        └── SparkBuilder.scala
-│
-└── build.sbt
-
 
 # Module Descriptions
 
