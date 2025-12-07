@@ -100,11 +100,10 @@ AzureSpark-Analytics-Layer/
 │   ├── etl/
 │   │   └── ClaimsETL.scala       # Curates healthcare claims data
 │   ├── analytics/
-│   │   └── CostKPIs.scala        # Provider-level KPIs
+│   │   └── CostKPI.scala         # Provider-level KPIs
 │   ├── matrix/                   # From CC assignment
 │   │   ├── Multiply.scala
 │   │   ├── Covariance.scala
-│   │   └── LinearRegression.scala
 │   ├── regression/
 │   │   └── LR.scala              # Closed-form regression (Spark SQL)
 │   └── utils/
