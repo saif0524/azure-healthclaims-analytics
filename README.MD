@@ -70,3 +70,23 @@ I decided to keep these modules in the project because they complement the ETL a
 - Linear algebra on Spark
 
 - Understanding of distributed computation
+
+# Azure Databricks Deployment
+
+Although my original coursework did not require cloud deployment, I extended the project to run fully on Azure Databricks, including:
+
+- Uploading JARs to Unity Catalog Volumes
+
+- Mounting ADLS / Blob storage for input and output
+
+- Running workflows as Databricks Jobs
+
+- Using Parquet as the curated analytics layer
+
+This was a valuable learning experience and helped me understand how production data pipelines run in real cloud environments.
+
+## Typical Job Configuration
+Main class: etl.ClaimsETL
+Parameters:
+   /mnt/raw/claims.csv
+   /mnt/curated/claims/
