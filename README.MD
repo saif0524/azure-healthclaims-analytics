@@ -72,8 +72,8 @@ I decided to keep these modules in the project because they complement the ETL a
 - Understanding of distributed computation
 
 
-```
 # Architecture
+```
 Raw Data (Azure Storage)
         │
         ▼
@@ -87,8 +87,9 @@ Curated Claims (Parquet / ADLS)
 Cost KPI Engine   Python EDA     ML / Numerical
 (Scala)           (Pandas)       (Covariance, LR, Multiply)
 ```
-```bash
+
 # Repository Structure
+```bash
 AzureSpark-Analytics-Layer/
 │
 ├── data/                         # Sample datasets
