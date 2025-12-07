@@ -84,7 +84,7 @@ Curated Claims (Parquet / ADLS)
         │
    ┌───────────────┬────────────────┐
    ▼               ▼                ▼
-Cost KPI Engine   Python EDA     (Optional) ML / Numerical
+Cost KPI Engine   Python EDA     ML / Numerical
 (Scala)           (Pandas)       (Covariance, LR, Multiply)
 ```
 ```bash
