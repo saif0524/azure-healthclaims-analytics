@@ -1,6 +1,6 @@
-# AzureSpark Analytics Layer
+# Azure HealthClaims Analytics 
 
-AzureSpark Analytics Layer is a personal data engineering project I built to strengthen my skills in Spark, Scala, distributed computing, and cloud-based data pipelines. The project started as part of my Cloud Computing coursework, where I implemented several Spark algorithms (distributed covariance, matrix multiplication, and a closed-form linear regression engine).
+Azure HealthClaims Analytics engine is a personal data engineering project I built to strengthen my skills in Spark, Scala, distributed computing, and cloud-based data pipelines. The project started as part of my Cloud Computing coursework, where I implemented several Spark algorithms (distributed covariance, matrix multiplication, and a closed-form linear regression engine).
 
 After completing the class, I decided to take the work much further and turn it into a production-style ETL and analytics pipeline that could realistically run in a healthcare analytics environment. To do that, I:
 
