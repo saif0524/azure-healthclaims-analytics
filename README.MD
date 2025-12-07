@@ -50,7 +50,7 @@ AzureSpark-Analytics-Layer/
 │
 ├── data/                         # Sample datasets
 ├── python/
-│   └── summary.ipynb             # Python exploratory analysis
+│   └── summary.py             # Python exploratory analysis
 │
 ├── src/main/scala/
 │   ├── etl/
