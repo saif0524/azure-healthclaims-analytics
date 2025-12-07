@@ -71,6 +71,46 @@ I decided to keep these modules in the project because they complement the ETL a
 
 - Understanding of distributed computation
 
+
+```
+# Architecture
+Raw Data (Azure Storage)
+        │
+        ▼
+Claims ETL (Scala + Spark)
+        │
+        ▼
+Curated Claims (Parquet / ADLS)
+        │
+   ┌───────────────┬────────────────┐
+   ▼               ▼                ▼
+Cost KPI Engine   Python EDA     (Optional) ML / Numerical
+(Scala)           (Pandas)       (Covariance, LR, Multiply)
+```
+```bash
+# Repository Structure
+AzureSpark-Analytics-Layer/
+│
+├── data/                         # Sample datasets
+├── python/
+│   └── summary.ipynb             # Python exploratory analysis
+│
+├── src/main/scala/
+│   ├── etl/
+│   │   └── ClaimsETL.scala       # Curates healthcare claims data
+│   ├── analytics/
+│   │   └── CostKPIs.scala        # Provider-level KPIs
+│   ├── matrix/                   # From CC assignment
+│   │   ├── Multiply.scala
+│   │   ├── Covariance.scala
+│   │   └── LinearRegression.scala
+│   ├── regression/
+│   │   └── LR.scala              # Closed-form regression (Spark SQL)
+│   └── utils/
+│        └── SparkBuilder.scala
+│
+└── build.sbt
+```
 # Azure Databricks Deployment
 
 Although my original coursework did not require cloud deployment, I extended the project to run fully on Azure Databricks, including:
