@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(assembly, Some(28e98f5b-a900-47c0-ab0b-914b46f48bab), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: assembly[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /home/saif/Documents/personal/Internship/spark-scala-cloud/target/scala-2.12/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mmultiple main classes detected: run 'show discoveredMainClasses' to see the list[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 5.089 (51.0%) were spent in GC. [Heap: 0.22GB free of 0.97GB, max 0.97GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 6.576 (68.0%) were spent in GC. [Heap: 0.11GB free of 0.97GB, max 0.97GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 8.577 (87.6%) were spent in GC. [Heap: 0.07GB free of 0.97GB, max 0.97GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 8.304 (83.7%) were spent in GC. [Heap: 0.10GB free of 0.97GB, max 0.97GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 8.365 (86.2%) were spent in GC. [Heap: 0.04GB free of 0.97GB, max 0.97GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 9.554 (96.7%) were spent in GC. [Heap: 0.03GB free of 0.97GB, max 0.97GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 10 seconds, 7.129 (72.4%) were spent in GC. [Heap: 0.09GB free of 0.97GB, max 0.97GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
