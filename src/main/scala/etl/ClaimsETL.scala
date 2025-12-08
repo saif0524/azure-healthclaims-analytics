@@ -11,19 +11,16 @@ object ClaimsETL {
     val spark = SparkBuilder.get("ClaimsETL")
     import spark.implicits._
 
-    val claimsPath = args(0)              // claims.csv
-    val transactionsPath = args(1)        // claims_transactions.csv
-    val outputPath = args(2)              // curated output folder
+    val claimsPath = args(0)              
+    val transactionsPath = args(1)        
+    val outputPath = args(2)              
 
-    // ------------------------------------------------------------------------------
-    // 1. Load raw claims (header-level claims data)
-    // ------------------------------------------------------------------------------
+    
     val rawClaims = spark.read
       .option("header", "true")
       .option("inferSchema", "true")
       .csv(claimsPath)
 
-    // Rename key columns
     val claims = rawClaims
       .withColumnRenamed("Id", "claim_id")
       .withColumnRenamed("PATIENTID", "patient_id")
@@ -31,9 +28,8 @@ object ClaimsETL {
       .withColumnRenamed("DIAGNOSIS1", "diagnosis_code")
       .withColumn("service_date", to_timestamp(col("SERVICEDATE")))
 
-    // ------------------------------------------------------------------------------
-    // 2. Load transactions to compute claim-level cost
-    // ------------------------------------------------------------------------------
+    
+    //Load transactions to compute claim-level cost
     val rawTx = spark.read
       .option("header", "true")
       .option("inferSchema", "true")
@@ -48,25 +44,21 @@ object ClaimsETL {
       .groupBy("claim_id")
       .agg(sum("amount").as("cost"))
 
-    // ------------------------------------------------------------------------------
-    // 3. Join header claims with cost summary
-    // ------------------------------------------------------------------------------
+   // Cleanup 
     val enrichedClaims = claims
       .join(claimCosts, Seq("claim_id"), "left")
-      .filter(col("cost").isNotNull)  // remove claims with no financial activity
+      .filter(col("cost").isNotNull) 
 
-    // ------------------------------------------------------------------------------
-    // 4. Dedup + final clean
-    // ------------------------------------------------------------------------------
+    
+    // Deduplication
+   
     val finalClaims = enrichedClaims
       .dropDuplicates("claim_id")
 
-    // ------------------------------------------------------------------------------
-    // 5. Write curated output
-    // ------------------------------------------------------------------------------
+
     finalClaims.write.mode("overwrite").parquet(outputPath)
 
-    println(s"Claims ETL completed successfully at: $outputPath")
+    println(s"Claims ETL completed: $outputPath")
 
     spark.stop()
   }
