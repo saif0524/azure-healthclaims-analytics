@@ -161,3 +161,20 @@ Most claims fall within lower cost ranges, while a small number of high-cost cla
 a long right tail, reflecting realistic healthcare spending patterns.
 
 <img src="docs/cost_distribution.png" alt="Cost Distribution of Healthcare Claims" width="700"/>
+
+
+### High-Cost Claims Distribution
+
+The histogram below shows the distribution of high-cost healthcare claims, identified using a cost-based threshold derived from the upper tail of the claims cost distribution. While most claims fall within lower cost ranges, a small subset of claims incur significantly higher costs, producing a right-skewed distribution.
+
+This pattern reflects realistic healthcare spending behavior, where a limited number of high-cost events account for a disproportionate share of total expenditures.
+
+<img src="docs/high_cost_claims.png" alt="High-Cost Claims Distribution" width="700"/>
+
+### Composite Risk by Provider
+
+The bar chart below presents a composite risk score aggregated at the provider level. This score combines multiple cost-based indicators—such as total cost contribution and high-cost claim frequency—into a single metric representing overall provider risk.
+
+The results show that a small number of providers exhibit elevated composite risk scores, highlighting how provider-level KPIs can be used to support risk stratification, cost monitoring, and targeted cost-control strategies in healthcare analytics.
+
+<img src="docs/composite_risk.png" alt="Composite Risk by Provider" width="700"/>
