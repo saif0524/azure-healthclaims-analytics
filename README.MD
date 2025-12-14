@@ -129,7 +129,7 @@ AzureSpark-Analytics-Layer/
 │
 └── build.sbt
 ```
-# Azure Databricks Deployment
+## Azure Databricks Deployment
 
 Although my original coursework did not require cloud deployment, I extended the project to run fully on Azure Databricks, including:
 
@@ -150,3 +150,14 @@ Parameters:
    /mnt/raw/claims.csv
    /mnt/curated/claims/
 ```
+
+
+## Results
+
+### Cost Distribution Analysis
+
+The histogram shows the distribution of healthcare claim costs after Spark-based ETL.
+Most claims fall within lower cost ranges, while a small number of high-cost claims form
+a long right tail, reflecting realistic healthcare spending patterns.
+
+<img src="docs/images/cost_distribution.png" alt="Cost Distribution of Healthcare Claims" width="700"/>
