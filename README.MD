@@ -160,4 +160,4 @@ The histogram shows the distribution of healthcare claim costs after Spark-based
 Most claims fall within lower cost ranges, while a small number of high-cost claims form
 a long right tail, reflecting realistic healthcare spending patterns.
 
-<img src="docs/images/cost_distribution.png" alt="Cost Distribution of Healthcare Claims" width="700"/>
+<img src="docs/cost_distribution.png" alt="Cost Distribution of Healthcare Claims" width="700"/>
