@@ -111,6 +111,7 @@ Cost KPI Engine   Python EDA     ML / Numerical
 AzureSpark-Analytics-Layer/
 │
 ├── data/                         # Sample datasets
+├── docs/                         # figures
 ├── python/
 │   └── summary.ipynb             # Python exploratory analysis
 │
