@@ -100,10 +100,10 @@ Claims ETL (Scala + Spark)
         ▼
 Curated Claims (Parquet / ADLS)
         │
-   ┌───────────────┬────────────────┐
-   ▼               ▼                ▼
-Cost KPI Engine   Python EDA     ML / Numerical
-(Scala)           (Pandas)       (Covariance, LR, Multiply)
+   ┌───────────────┬────────────────┬───────────────────────────────┐ 
+   ▼               ▼                ▼                               ▼
+Cost KPI Engine   Python EDA     ML / Numerical                 Interactive Dashboard
+(Scala)           (Pandas)       (Covariance, LR, Multiply)     (SQL + Databrics Dashboard)
 ```
 
 # Repository Structure
