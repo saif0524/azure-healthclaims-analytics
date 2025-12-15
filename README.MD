@@ -1,38 +1,6 @@
 ## Azure HealthClaims Analytics
 #### Tech stack: Spark, Scala, Databricks, ADLS, Parquet, SQL, Pandas
 
-Azure HealthClaims Analytics engine is a personal data engineering project I built to strengthen my skills in Spark, Scala, distributed computing, and cloud-based data pipelines. The project started as part of my Cloud Computing coursework, where I implemented several Spark algorithms (distributed covariance, matrix multiplication, and a closed-form linear regression engine).
-
-After completing the class, I decided to take the work much further and turn it into a production-style ETL and analytics pipeline that could realistically run in a healthcare analytics environment. 
-
-<!-- To do that, I:
-
-- Re-structured the codebase into independent modules
-
-- Added a healthcare claims ETL workflow
-
-- Implemented provider cost analytics
-
-- Created a Python notebook for downstream analysis
-
-- Deployed the system to Azure Databricks (leveraging the 14 day trail period) using ADLS and Unity Catalog
-
-The result is a single-developer project that demonstrates both deep technical understanding (Scala/Spark) and practical data engineering workflows (ETL, KPIs, cloud deployment).
--->
-
-## Project Overview
-
-This project simulates a simplified healthcare data pipeline:
-
-1. Raw claims data (CSV/Excel) is ingested from Azure Storage.
-
-2. A Spark-based ETL job cleans, standardizes, and curates the data.
-
-3. A Cost KPI module computes provider-level metrics used in real cost-of-care analytics.
-
-Additional distributed computing modules (covariance, matrix multiply, linear regression) are included from my Cloud Computing assignment as examples of parallel numerical analytics on Spark.
-
-## Databricks Dashboard
 <img src="docs/databricks_dashboard.png" width="950"/>
 
 The project includes an interactive Databricks dashboard built on top of curated
@@ -48,6 +16,20 @@ Key views include:
 These dashboards demonstrate how Spark-based ETL and analytics outputs can be
 operationalized into stakeholder-facing views for cost-of-care and risk analysis.
 
+Azure HealthClaims Analytics engine is a personal data engineering project I built to strengthen my skills in Spark, Scala, distributed computing, and cloud-based data pipelines. The project started as part of my Cloud Computing coursework, where I implemented several Spark algorithms (distributed covariance, matrix multiplication, and a closed-form linear regression engine).
+
+After completing the class, I decided to take the work much further and turn it into a production-style ETL and analytics pipeline that could realistically run in a healthcare analytics environment. 
+
+## Project Overview
+This project simulates a simplified healthcare data pipeline:
+
+1. Raw claims data (CSV/Excel) is ingested from Azure Storage.
+
+2. A Spark-based ETL job cleans, standardizes, and curates the data.
+
+3. A Cost KPI module computes provider-level metrics used in real cost-of-care analytics.
+
+Additional distributed computing modules (covariance, matrix multiply, linear regression) are included from my Cloud Computing assignment as examples of parallel numerical analytics on Spark.
 
 
 
