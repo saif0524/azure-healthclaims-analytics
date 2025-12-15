@@ -1,5 +1,5 @@
-# Azure HealthClaims Analytics
-### Tech stack: Spark, Scala, Databricks, ADLS, Parquet, SQL, Pandas
+## Azure HealthClaims Analytics
+#### Tech stack: Spark, Scala, Databricks, ADLS, Parquet, SQL, Pandas
 
 Azure HealthClaims Analytics engine is a personal data engineering project I built to strengthen my skills in Spark, Scala, distributed computing, and cloud-based data pipelines. The project started as part of my Cloud Computing coursework, where I implemented several Spark algorithms (distributed covariance, matrix multiplication, and a closed-form linear regression engine).
 
@@ -18,7 +18,7 @@ After completing the class, I decided to take the work much further and turn it 
 The result is a single-developer project that demonstrates both deep technical understanding (Scala/Spark) and practical data engineering workflows (ETL, KPIs, cloud deployment).
 
 
-# Project Overview
+## Project Overview
 
 This project simulates a simplified healthcare data pipeline:
 
@@ -68,12 +68,12 @@ Purpose: Used for developing and evaluating healthcare analytics pipelines witho
 🔗 Download link:
 https://synthea.mitre.org/downloads
 
-# Module Descriptions
+## Module Descriptions
 
-## Claims ETL Pipeline (Scala)
+### Claims ETL Pipeline (Scala)
 This module ingests raw healthcare claims files, enforces schema consistency, handles missing values, deduplicates claim IDs, standardizes timestamps, and writes a curated Parquet dataset.
 
-## Cost KPI Analytics (Scala)
+### Cost KPI Analytics (Scala)
 
 This job reads curated claims and computes:
 
@@ -88,7 +88,7 @@ This job reads curated claims and computes:
     - High-cost claim flagging
 
 
-## Distributed Numerical Computing (From Course Assignment)
+### Distributed Numerical Computing (From Course Assignment)
 
 The following modules originated from my Cloud Computing coursework:
 
@@ -109,7 +109,7 @@ I decided to keep these modules in the project because they complement the ETL a
 - Understanding of distributed computation
 
 
-# Architecture
+## Architecture
 ```
 Raw Data (Azure Storage)
         │
@@ -125,7 +125,7 @@ Cost KPI Engine   Python EDA     ML / Numerical                 Interactive Dash
 (Scala)           (Pandas)       (Covariance, LR, Multiply)     (SQL + Databrics Dashboard)
 ```
 
-# Repository Structure
+## Repository Structure
 ```bash
 AzureSpark-Analytics-Layer/
 │
