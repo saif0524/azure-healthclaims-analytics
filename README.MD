@@ -49,7 +49,7 @@ operationalized into stakeholder-facing views for cost-of-care and risk analysis
 
 
 
-# Dataset: Synthetic Healthcare Claims Dataset (Synthea)
+## Dataset: Synthetic Healthcare Claims Dataset (Synthea)
 
 Designed to scale to millions of records on Spark clusters (Databricks/Dataproc); small dataset used for cost and reproducibility.
 
