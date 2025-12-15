@@ -196,5 +196,5 @@ Key views include:
 These dashboards demonstrate how Spark-based ETL and analytics outputs can be
 operationalized into stakeholder-facing views for cost-of-care and risk analysis.
 
-<img src="docs/dashboard1.png" width="950"/>
+<img src="docs/dashboard.png" width="950"/>
 
