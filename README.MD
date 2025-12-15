@@ -33,6 +33,7 @@ This project simulates a simplified healthcare data pipeline:
 Additional distributed computing modules (covariance, matrix multiply, linear regression) are included from my Cloud Computing assignment as examples of parallel numerical analytics on Spark.
 
 ## Databricks Dashboard
+<img src="docs/databricks_dashboard.png" width="950"/>
 
 The project includes an interactive Databricks dashboard built on top of curated
 healthcare claims data stored in Parquet format. The dashboard exposes provider-level
@@ -47,7 +48,6 @@ Key views include:
 These dashboards demonstrate how Spark-based ETL and analytics outputs can be
 operationalized into stakeholder-facing views for cost-of-care and risk analysis.
 
-<img src="docs/databricks_dashboard.png" width="950"/>
 
 
 
