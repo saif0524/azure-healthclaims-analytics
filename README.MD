@@ -152,6 +152,7 @@ This was a valuable learning experience and helped me understand how production 
 Main class: etl.ClaimsETL
 Parameters:
    /mnt/raw/claims.csv
+   /mnt/raw/transactions.csv
    /mnt/curated/claims/
 ```
 
