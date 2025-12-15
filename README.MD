@@ -3,7 +3,9 @@
 
 Azure HealthClaims Analytics engine is a personal data engineering project I built to strengthen my skills in Spark, Scala, distributed computing, and cloud-based data pipelines. The project started as part of my Cloud Computing coursework, where I implemented several Spark algorithms (distributed covariance, matrix multiplication, and a closed-form linear regression engine).
 
-After completing the class, I decided to take the work much further and turn it into a production-style ETL and analytics pipeline that could realistically run in a healthcare analytics environment. To do that, I:
+After completing the class, I decided to take the work much further and turn it into a production-style ETL and analytics pipeline that could realistically run in a healthcare analytics environment. 
+
+<!-- To do that, I:
 
 - Re-structured the codebase into independent modules
 
@@ -16,7 +18,7 @@ After completing the class, I decided to take the work much further and turn it 
 - Deployed the system to Azure Databricks (leveraging the 14 day trail period) using ADLS and Unity Catalog
 
 The result is a single-developer project that demonstrates both deep technical understanding (Scala/Spark) and practical data engineering workflows (ETL, KPIs, cloud deployment).
-
+-->
 
 ## Project Overview
 
