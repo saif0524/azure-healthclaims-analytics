@@ -10,7 +10,18 @@ object ClaimsETL {
 
     val spark = SparkBuilder.get("ClaimsETL")
     import spark.implicits._
+    
+    //claimsPath = spark.read
+    //                    .option("header", "true")
+    //                    .option("inferSchema", "true")
+    //                    .csv("/mnt/sparkdata/claims/claims.csv")
 
+    
+    //transactionsPath = spark.read.parquet("/mnt/sparkdata/claims/")
+    //                    .option("header", "true")
+    //                    .option("inferSchema", "true")
+    //                    .csv("/mnt/sparkdata/claims/transactions.csv")
+    
     val claimsPath = args(0)              
     val transactionsPath = args(1)        
     val outputPath = args(2)              
@@ -51,7 +62,6 @@ object ClaimsETL {
 
     
     // Deduplication
-   
     val finalClaims = enrichedClaims
       .dropDuplicates("claim_id")
 
