@@ -179,3 +179,22 @@ The bar chart below presents a composite risk score aggregated at the provider l
 The results show that a small number of providers exhibit elevated composite risk scores, highlighting how provider-level KPIs can be used to support risk stratification, cost monitoring, and targeted cost-control strategies in healthcare analytics.
 
 <img src="docs/composite_risk.png" alt="Composite Risk by Provider" width="700"/>
+
+
+### Databricks Dashboard
+
+The project includes an interactive Databricks dashboard built on top of curated
+healthcare claims data stored in Parquet format. The dashboard exposes provider-level
+cost KPIs and risk indicators designed to support exploratory analysis and monitoring.
+
+Key views include:
+- Provider average cost versus claim volume
+- High-cost claim counts by provider
+- Temporal trends in average monthly cost
+- Overall cost distribution and outlier behavior
+
+These dashboards demonstrate how Spark-based ETL and analytics outputs can be
+operationalized into stakeholder-facing views for cost-of-care and risk analysis.
+
+<img src="docs/dashboard.png" width="900"/>
+
